@@ -20,6 +20,12 @@ a:hover{
     box-sizing: border-box;
 }
 
+.container{
+    width: 1170px !important;
+    margin:0;
+    
+
+}
 
 
 :root{
@@ -31,4 +37,20 @@ a:hover{
 
 html{
     font-family: poppins, sans-serif;
+}
+
+/*students view result section*/
+
+.students_results_view img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+
+.students_results_view h1{
+    text-align: center;
+    font-size: 22px;
+
 }

@@ -6,8 +6,9 @@
 
 function dataSend(key, arr){
 
-   let data = JSON.stringify(arr)
-   localStorage.setItem(key, data ) 
+   let data = JSON.stringify(arr);
+   localStorage.setItem(key, data );
+   
 
 }
 
@@ -19,10 +20,16 @@ function dataSend(key, arr){
 function dataGet(key){
     
     let data = localStorage.getItem(key);
+   return data ? JSON.parse(data) : false;
 
-     data ? JSON.parse(data) : false;
+};
 
-}
+/**
+ * validation
+ * @param {*} msg 
+ * @param {*} type 
+ * @returns 
+ */
 
 function msg(msg, type ='danger'){
    return `<p class ="alert alert-${type}">${msg}</p>`
